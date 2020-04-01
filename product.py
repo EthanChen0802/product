@@ -4,10 +4,9 @@ products =[]
 
 # 讀取檔案
 if os.path.isfile('products.csv'):  #檢查檔案在不在
-	print('yeah!找到檔案了!')
+	print('yeah! 找到檔案了!')
 	with open('products.csv', 'r', encoding ='utf-8') as f:
-		for line in xrange(1,10):
-		passfor line in f:
+		for line in f:
 			if '商品,價格' in line:
 				continue
 			name, price = line.strip().split(',')
